@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+    <item
+        android:id="@+id/tvAnim"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:title="Animation"
+        android:textSize="15sp"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <item
+        android:id="@+id/tvMotion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:title="Motion Layout"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <item
+        android:id="@+id/tvLottie"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:title="Lottie"
+        android:focusable="true" />
+
+    <item
+        android:id="@+id/tvCustom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:title="Custom view"
+        android:focusable="true" />
+</menu>
