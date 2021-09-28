@@ -22,9 +22,9 @@ class TabsPagerAdapter(fm: FragmentManager, lifecycle: Lifecycle, private var nu
                 // # motion Fragment
                 val bundle = Bundle()
                 bundle.putString("fragmentName", "Movies Fragment")
-                val moviesFragment = AnimationFragment()
-                moviesFragment.arguments = bundle
-                return moviesFragment
+                val motionFragment = MotionFragment()
+                motionFragment.arguments = bundle
+                return motionFragment
             }
             2 -> {
                 // # lottie Fragment
