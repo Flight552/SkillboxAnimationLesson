@@ -64,4 +64,8 @@ dependencies {
 // JetPack Navigation
     implementation 'androidx.navigation:navigation-fragment-ktx:2.3.5'
 
+    //Lottie
+    implementation 'com.airbnb.android:lottie:3.6.1'
+
+
 }

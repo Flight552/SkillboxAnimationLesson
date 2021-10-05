@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.Lifecycle
 import androidx.viewpager2.adapter.FragmentStateAdapter
+import com.example.animation.view.StarFragment
 
 class TabsPagerAdapter(fm: FragmentManager, lifecycle: Lifecycle, private var numberOfTabs: Int) : FragmentStateAdapter(fm, lifecycle) {
 
@@ -29,18 +30,18 @@ class TabsPagerAdapter(fm: FragmentManager, lifecycle: Lifecycle, private var nu
             2 -> {
                 // # lottie Fragment
                 val bundle = Bundle()
-                bundle.putString("fragmentName", "Books Fragment")
-                val booksFragment = AnimationFragment()
-                booksFragment.arguments = bundle
-                return booksFragment
+                bundle.putString("fragmentName", "Lottie Fragment")
+                val lottieFragment = Lottie()
+                lottieFragment.arguments = bundle
+                return lottieFragment
             }
             3 -> {
                 // # custom Fragment
                 val bundle = Bundle()
-                bundle.putString("fragmentName", "Books Fragment")
-                val booksFragment = AnimationFragment()
-                booksFragment.arguments = bundle
-                return booksFragment
+                bundle.putString("fragmentName", "Star Fragment")
+                val starFragment = StarFragment()
+                starFragment.arguments = bundle
+                return starFragment
             }
             else -> return AnimationFragment()
         }
